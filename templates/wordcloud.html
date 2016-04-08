@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>
+<a href="/" >home</a>
+        </h1>
+     <br/>
+     <br/>
+<form action="wordcloud.html" method="get" class="form-inline">
+      <div class="form-group">
+        <label>start time:</label>
+        <input type="text" name="stime" value="2016-01-23 00:00:00" class="form-control">
+        <span>2016-01-23 00:00:00</span>
+      </div>
+      <br/>
+      <div class="form-group">
+        <label>end time:</label>
+        <input type="text" name="etime" value="2016-01-25 00:00:00" class="form-control">
+        <span>2016-01-25 00:00:00</span>
+      </div>
+        <br/>
+      <div class="form-group">
+        <label>brand(chinese):</label>
+        <input type="text" name="brand" value="奥迪" class="form-control">
+        <span>奥迪,奔驰 etc.</span>
+      </div>
+<br/>
+      <div class="form-group">
+        <label>source: </label>
+        <input type="text" name="source" value="autohome" class="form-control">
+        <span>weibo,autohome,xcar,zhihu,sina</span>
+      </div>
+<br/>
+      <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    {{input}}
+    <br/>
+    <label for="male">{{ data }}</label>
+
+</body>
+</html>
